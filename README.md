@@ -1,4 +1,4 @@
-# Summer Products - Regression and Classification Analysis Project
+# Summer Products Sales - Regression and Classification Analysis Project
 
 ---
 
