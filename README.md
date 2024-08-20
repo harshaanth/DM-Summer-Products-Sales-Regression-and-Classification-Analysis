@@ -1,40 +1,53 @@
-# Linear Regression - Predicting Product Sales
+# Summer Products - Regression and Classification Analysis Project
 
-This repository contains the project files for the linear regression analysis of product sales based on various factors. The main objective of this project was to build a model to predict product sales using data from summer products with rating and performance metrics.
-
-## Project Files
-
-- **HW_3_Project_Report.pdf**: The detailed project report explaining the steps, methodologies, and findings of the linear regression analysis.
-- **summer-products-with-rating-and-performance_Harshaanth.xlsx**: The dataset used for analysis, containing product ratings and performance metrics.
-- **README.md**: Project overview and description (this file).
+---
 
 ## Project Overview
 
-The goal of this project was to analyze and predict product sales using linear regression models. The analysis was performed using the `summer-products-with-rating-and-performance` dataset. The key steps involved in this analysis include:
+This repository contains two key projects that perform **regression and classification analyses** on the same dataset of summer products, which includes ratings and performance metrics. The two projects involve different types of analysis:
 
-1. **Data Visualization**:
-   - Histograms of all numerical variables were plotted to check their distribution.
-   - Log transformation was applied to the `units_sold` variable due to its skewed distribution.
+- **Part A: Linear Regression**
+- **Part B: Logistic Regression (Classification)**
 
-2. **Scatter and Box Plots**:
-   - Scatter plots were created to visualize the relationship between `log_units_sold` and other numerical variables.
-   - Box plots were generated to compare `log_units_sold` against categorical variables.
+Both projects aim to identify significant factors influencing product performance, with Part A focusing on predicting continuous outcomes, and Part B focusing on classifying products into categories (popular vs. not popular).
 
-3. **Linear Regression Models**:
-   - A linear regression model was initially run using all predictors. The significant variables were identified, and the model's performance on both training and validation data was assessed.
-   - A stepwise variable selection was performed to simplify the model by removing insignificant predictors, leading to a more efficient model.
+---
 
-4. **Model Comparison**:
-   - The models were compared using performance metrics such as RMSE. The simplified model (Model B) was chosen for its better predictive accuracy and lack of multicollinearity issues.
+## Part A: Linear Regression
 
-5. **Prediction**:
-   - The final model was used to predict the number of units sold for a hypothetical product scenario.
+### Description
 
-## Key Findings
+The **Linear Regression** model was developed to predict a continuous target variable based on multiple predictors. In this case, we used the dataset of summer products to explore the relationships between product ratings, merchant features, and overall performance.
 
-- **Significant Predictors**: The presence of a merchant profile picture, product rating, and merchant rating were found to be significant predictors of product sales.
-- **Model Performance**: The simplified model showed comparable performance to the full model but was preferred due to its simplicity and lack of multicollinearity.
+### Files
 
-## Conclusion
+- **HW_3_Linear_Regression_Project_Report.pdf**: A comprehensive report detailing the methodology, analysis, and results of the linear regression model. This includes data preparation, model fitting, and evaluation metrics such as R-squared, adjusted R-squared, and residual analysis.
 
-The linear regression model developed in this project effectively predicts product sales based on selected significant variables. The model is robust and performs well on new data, making it a valuable tool for predicting sales in similar contexts.
+- **Linear_Regression_summer-products-with-rating-and-performance_Harshaanth.xlsx**: The Excel file containing the dataset used for linear regression, including the processed data and regression outputs.
+
+---
+
+## Part B: Logistic Regression (Classification)
+
+### Description
+
+The **Logistic Regression** model was used to perform **classification** to predict the probability that a product falls into one of two categories: popular (1) or not popular (0). The model uses predictor variables such as the presence of a merchant's profile picture, product ratings, and merchant ratings to estimate the likelihood of a product being classified as popular.
+
+### Methodology
+
+1. **Data Preparation**: The dataset was split into training and validation sets to evaluate model performance.
+2. **Model Fitting**: Stepwise selection was utilized to identify the most significant predictors for classifying product popularity.
+3. **Model Interpretation**: Coefficients were interpreted to understand how each predictor influences the probability of a product being popular.
+4. **Model Evaluation**: The model's classification accuracy was assessed using metrics such as the ROC curve, AUC, precision, and recall.
+
+### Files
+
+- **HW_6_Logistic_Regression_Project_Report.pdf**: A detailed report on the logistic regression classification analysis. This includes the logistic regression model, interpretation of coefficients, ROC curve analysis, and precision-recall evaluation.
+
+- **Logistic_Regression_summer-products-with-rating-and-performance_Harshaanth.xlsx**: The Excel file containing the dataset used for logistic regression, along with classification outputs, including predicted probabilities and confusion matrices.
+
+---
+
+## Summary
+
+This repository provides a comprehensive analysis using both linear regression and logistic regression (classification) to explore factors affecting product performance. The included files offer detailed insights into the methodologies, results, and interpretations, serving as a valuable resource for understanding regression and classification techniques in data analysis.
